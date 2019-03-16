@@ -1,37 +1,26 @@
-# Programação Paralela - ELC139-2019a
-Primeiro semestre de 2019  
-Professora: [Andrea Schwertner Charão](http://www.inf.ufsm.br/~andrea)  
-Carga horária: 60h  
-Horários: terças e quintas, das 10:30 às 12:30  
-Sala: 363, CT
+[Programação Paralela](https://github.com/AndreaInfUFSM/elc139-2018a) > T1
 
+TOP500 & me: Comparativo de Arquiteturas Paralelas
+--------------------------------------------------
 
-## Trabalhos
- 1. [TOP500 & me: comparativo de arquiteturas paralelas](trabalhos/t1) (entrega até terça, 19/03, 9h)
-<!--
- 2. [Experiências com profilers](trabalhos/t2) (entrega até quarta, 21/03, 23h59)
- 3. [Programação paralela multithread](trabalhos/t3) (entrega até segunda, 09/04, 23h59)
- 4. [Scheduling com OpenMP](trabalhos/t4) (entrega até quarta, 18/04, 23h59)
- 5. [Aplicação do método de Monte Carlo em OpenMP](trabalhos/t5) (entrega até segunda, 23/04, 23h59 - apresentação/discussão terça, 24/04)
- 6. [N-Rainhas com OpenMP](trabalhos/t6) (entrega até segunda, 07/05, 23h59 - apresentação/discussão terça, 08/05)
- 7. [Primeiros passos com MPI](trabalhos/t7) (entrega até segunda, 04/06, 23h59 - discussão terça, 05/06)
- 8. [Comunicação coletiva em MPI](trabalhos/t8) (entrega até quarta, 13/06, 23h59 - discussão quinta, 14/06)
- 9. [Resolvendo um problema da maratona de programação paralela](trabalhos/t9) (entrega até segunda, 25/06, 23h59 - apresentação terça, 26/06)
+Nome: Gabriel Doyle Balk
 
- 6. [Experiências com MPI](trabalhos/t6) (entrega até segunda, 02/05, 23h59)
- 7. [Algoritmo de Dijkstra com OpenMPI](https://github.com/fpuntel/ELC139) (até 17/05, 23h59)
+| Característica                                            | Computador no TOP500  | Meu computador  |
+| --------------------------------------------------------- | --------------------- | --------------- |
+| Nome/Título                                               |Endeavor - Intel Cluster|samsung expert x40|
+| Imagem (foto, diagrama, screenshot, etc.)                 | <img src="https://krishnaorg-ad70.kxcdn.com/wp-content/uploads/2004/07/NASA-Supercomputer.jpg" width="48"> | <img src="http://s2.glbimg.com/UO5Xtns-pMgFVzPurvAIaiebPM0=/695x0/s.glbimg.com/po/tt2/f/original/2016/10/03/samsung-expert-x40.jpg" width="48">|
+| Classificação de Flynn                                    |                       |                 |
+| Memória: compartilhada, distribuída ou ambas?             |                       |                 |
+| Número total de núcleos de processamento                  |        45,680         |        2        |
+| Fabricante e modelo do(s) processador(es)                 |Intel Xeon Phi 7250F 68C 1.4GHz|Intel Core i7-5500U 2.40GHz|
+| Frequência do(s) processador(es)                          |    1.4 ~ 1.6 GHz      | 2.40 ~ 3.00 GHz |
+| Memória total                                             |  	   120,640 GB       |      8 GB       |
+| Tipo(s) de interconexão entre os núcleos/processadores    |    Intel Omni-Pat     |                 |
+| Desempenho Linpack                                        |   1,462.97 TFlop/s    |                 |
 
- - [Experiências com profilers] (trabalhos/t2) (entrega até quarta, 23/03/2016, 23h59)
- - [Programação paralela multithread] (trabalhos/t3) (entrega até segunda, 04/04/2016, 23h59)
- - [Floyd-Warshall paralelo em multicore] (trabalhos/t4) (entrega até quarta, 20/04, 23h59)
- - [Mistério dos primos em OpenMP] (trabalhos/t5) (entrega até quarta, 04/05, 23h59)
- - [Ray-tracer paralelo com MPI] (trabalhos/t6) (entregas parciais até as aulas dos dias 31/05 e 02/06; entrega final até dia 06/06, 23:59)
--->
+### Referências
+- Autor (nome de pessoa ou instituição). Título. URL.
+- Autor (nome de pessoa ou instituição). Título. URL.
+- Autor (nome de pessoa ou instituição). Título. URL.
+- ...
 
-
-## Sobre a disciplina
- - [Ementa](https://drive.google.com/file/d/0B8XtQdF_Gdk2RHZZR0NMaU4xSGc/view)
- - Avaliação: 
-   - Instrumentos de avaliação: trabalhos realizados e apresentados/discutidos em aula
-   - Peso de cada trabalho proporcional ao tempo para realizá-lo
-   - Participação na aula subsequente a cada entrega faz parte da avaliação
