@@ -9,7 +9,7 @@ Nome: Gabriel Doyle Balk
 | Nome/Título                                            | Endeavor - Intel Cluster                                                                        | samsung expert x40                                                                                                                               |
 | Imagem (foto, diagrama, screenshot, etc.)              | <img src="https://www.nas.nasa.gov/hecc/assets/images/content/Endeavour_large.jpg" width="300"> | <img src="http://s2.glbimg.com/UO5Xtns-pMgFVzPurvAIaiebPM0=/695x0/s.glbimg.com/po/tt2/f/original/2016/10/03/samsung-expert-x40.jpg" width="420"> |
 | Classificação de Flynn                                 | SIMD                                                                                            | SIMD                                                                                                                                             |
-| Memória: compartilhada, distribuída ou ambas?          | Ambas                                                                                           | Compartilhada                                                                                                                                    |
+| Memória: compartilhada, distribuída ou ambas?          | Compartilhada                                                                                   | Compartilhada                                                                                                                                    |
 | Número total de núcleos de processamento               | 45,680                                                                                          | 2                                                                                                                                                |
 | Fabricante e modelo do(s) processador(es)              | Intel Xeon Phi 7250F 68C 1.4GHz                                                                 | Intel Core i7-5500U 2.40GHz                                                                                                                      |
 | Frequência do(s) processador(es)                       | 1.4 ~ 1.6 GHz                                                                                   | 2.40 ~ 3.00 GHz                                                                                                                                  |
@@ -19,6 +19,7 @@ Nome: Gabriel Doyle Balk
 
 ### Referências
 
+- Nasa. Endeavour Supercomputer. https://www.nas.nasa.gov/hecc/resources/endeavour.html
 - Samsung. Samsung Expert X40. https://www.samsung.com/br/support/model/NP270E5K-XW3BR/
 
 - Intel. Technical Resources: Intel® Core™ Processors https://www.intel.com/content/www/us/en/processors/core/7th-gen-core-family-desktop-s-processor-lines-datasheet-vol-1.html
