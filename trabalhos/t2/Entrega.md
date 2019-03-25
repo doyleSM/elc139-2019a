@@ -125,4 +125,27 @@ for (i = 0; i < nthreads; i++) {
 }
 ```
 
+2. Considerando o tempo (em microssegundos) mostrado na saída do programa, qual foi a aceleração (speedup) com o uso de threads?
+
+Média de 5 execuções
+
+Speedup = TSeq / TPar
+Speedup = 6312160 usec / 3311287 usec = 1.90
+
+A aceleração foi de ~ 1.90.
+
+3. A aceleração se sustenta para outros tamanhos de vetores, números de threads e repetições? Para responder a essa questão, você terá que realizar diversas execuções, variando o tamanho do problema (tamanho dos vetores e número de repetições) e o número de threads (1, 2, 4, 8..., dependendo do número de núcleos). Cada caso deve ser executado várias vezes, para depois calcular-se um tempo de processamento médio para cada caso. Atenção aos fatores que podem interferir na confiabilidade da medição: uso compartilhado do computador, tempos muito pequenos, etc.
+
+| Vetor    | Repetições | 1 Thread | 2 Threads | 4 Threads |
+| -------- | ---------- | -------- | --------- | --------- |
+| 1000000  | 1000       | 3125604  | 1713023   | 1362928   |
+| 1000000  | 2000       | 6231789  | 3314419   | 2735857   |
+| 1000000  | 3000       | 9352403  | 4870448   | 4157044   |
+| 3000000  | 1000       | 9379908  | 4897896   | 4504889   |
+| 300000   | 2000       | 18796851 | 9771083   | 9049266   |
+| 3000000  | 3000       | 28219169 | 14647455  | 13747390  |
+| 10000000 | 1000       | 31354402 | 16323965  | 14939473  |
+| 10000000 | 2000       | 62897084 | 33822323  | 30412280  |
+| 10000000 | 3000       | 93976112 | 54427782  | 46721233  |
+
 # OpenMP
