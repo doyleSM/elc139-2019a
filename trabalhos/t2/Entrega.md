@@ -54,16 +54,22 @@ void *dotprod_worker(void *arg){
 ```
 
 a primeira thread terá:
+
+```
 offset = 0
 wsize = 500000
-start = 0 \* 500000 = 0
+start = 0 * 500000 = 0
 end = 0 + 500000 = 500000
+```
 
 e a segunda thread:
+
+```
 offset = 1
 wsize = 500000
-start = 1 \* 500000 = 500000
+start = 1 * 500000 = 500000
 end = 500000 + 500000 = 1000000
+```
 
 a distribuição da carga entre as threadas é dada pelo código abaixo
 
@@ -80,11 +86,11 @@ ambas as threads terão o mesmo numero de repetições já que o dotdata.repeat
 é igual para ambas.
 mas o **for interno é onde realmente a carga é dividida** .
 ainda com o mesmo exemplo temos:
-a primeira* thread executará de start = 0 até 499999 (end<500000)
+a primeira* thread executará de start = 0 até 499999 (end < 500000)
 e a segunda* thread executatá de start = 500000 até 999999 (end < 1000000)
 garantindo assim que ambas operem em cima do mesmo numero de dados
 
-\* Primeira e segunda de acordo com a ordem de criação, na pŕatica não temos como garantir qual delas será executado primeiro, pois depende do escalonador.
+\* Primeira e segunda de acordo com a ordem de criação, na pŕatica não temos como garantir qual delas será executada primeiro, pois depende do escalonador.
 
 #### Comunicação
 
