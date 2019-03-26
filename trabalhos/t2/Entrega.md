@@ -1,4 +1,4 @@
-[Programação Paralela](https://github.com/AndreaInfUFSM/elc139-2018a) > T2
+[Programação Paralela](https://github.com/AndreaInfUFSM/elc139-2019a) > T2
 
 # Programação Paralela Multithread
 
@@ -147,5 +147,25 @@ A aceleração foi de ~ 1.90.
 | 10000000 | 1000       | 31354402 | 16323965  | 14939473  |
 | 10000000 | 2000       | 62897084 | 33822323  | 30412280  |
 | 10000000 | 3000       | 93976112 | 54427782  | 46721233  |
+
+Com base na tabela abaixo, vemos claramente que houve um ganho significativo com o acrescimo de uma thread em relação ao sequencial, porém com a passagem de duas para quatro threads o ganho não foi tão significativo. Também é possível notar que o ganho com 4 threads caiu conforme o tamanho do vetor ia aumentando.
+
+| Vetor    | Repetições | 2 Threads(Speedup) | 4 Threads(Speedup) |
+| -------- | ---------- | ------------------ | ------------------ |
+| 1000000  | 1000       | 1.82               | 2.29               |
+| 1000000  | 2000       | 1.88               | 2.27               |
+| 1000000  | 3000       | 1.92               | 2.24               |
+| 3000000  | 1000       | 1.91               | 2.08               |
+| 3000000  | 2000       | 1.92               | 2.07               |
+| 3000000  | 3000       | 1.92               | 2.05               |
+| 10000000 | 1000       | 1.92               | 2.09               |
+| 10000000 | 2000       | 1.85               | 2.06               |
+| 10000000 | 3000       | 1.72               | 2.01               |
+
+5. Explique as diferenças entre [pthreads_dotprod.c](pthreads_dotprod/pthreads_dotprod.c) e [pthreads_dotprod2.c](pthreads_dotprod/pthreads_dotprod2.c). Com as linhas removidas, o programa está correto?
+
+O programa `pthreads_dotprod.c` usa mutex para exclusão mútua no acesso à váriavel
+`dotdata.c` enquanto o `pthreads_dotprod2.c` deixa o acesso livre.
+O programa não está correto, pois em casos raros é possível que as duas variáveis leiam o valor de `dotdata.c` ao mesmo tempo fazendo com que a soma seja inconsistente.
 
 # OpenMP
