@@ -170,6 +170,9 @@ O programa não está correto, pois em casos raros é possível que as duas vari
 
 # OpenMP
 
+1. Implemente um programa equivalente a [pthreads_dotprod.c](pthreads_dotprod/pthreads_dotprod.c) usando OpenMP.
+   Implementação [aqui](openmp/openmp.c)
+
 2. Avalie o desempenho do programa em OpenMP, usando os mesmos dados/argumentos do programa com threads POSIX.
 
 - [Aprendendo a usar a estrutura OpenMP com GCC](https://www.ibm.com/developerworks/br/aix/library/au-aix-openmp-framework/index.html)
