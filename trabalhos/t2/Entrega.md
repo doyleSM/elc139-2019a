@@ -175,20 +175,11 @@ O programa não está correto, pois em casos raros é possível que as duas vari
 
 2. Avalie o desempenho do programa em OpenMP, usando os mesmos dados/argumentos do programa com threads POSIX.
 
-Pthreads<br/>
-| Vetor | Repetições | 1 Thread | 2 Threads | 4 Threads |
-| -------- | ---------- | -------- | --------- | --------- |
-| 1000000 | 1000 | 3125604 | 1713023 | 1362928 |
-| 1000000 | 2000 | 6231789 | 3314419 | 2735857 |
-| 1000000 | 3000 | 9352403 | 4870448 | 4157044 |
-<br/>
-OpenMP
-<br/>
-| Vetor | Repetições | 1 Thread | 2 Threads | 4 Threads |
-| -------- | ---------- | -------- | --------- | --------- |
-| 1000000 | 1000 | 3497818 | 1630092 | 1328460 |
-| 1000000 | 2000 | 6296544 | 3506299 | 2866003 |
-| 1000000 | 3000 | 9764109 | 5652231 | 4378812 |
+| Vetor   | Repetições | 1 Thread | 2 Threads | 4 Threads |
+| ------- | ---------- | -------- | --------- | --------- |
+| 1000000 | 1000       | 3497818  | 1630092   | 1328460   |
+| 1000000 | 2000       | 6296544  | 3506299   | 2866003   |
+| 1000000 | 3000       | 9764109  | 5652231   | 4378812   |
 
 ### Referências
 
