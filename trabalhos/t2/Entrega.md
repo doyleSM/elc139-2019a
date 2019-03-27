@@ -169,3 +169,8 @@ O programa `pthreads_dotprod.c` usa mutex para exclusão mútua no acesso à vá
 O programa não está correto, pois em casos raros é possível que as duas variáveis leiam o valor de `dotdata.c` ao mesmo tempo fazendo com que a soma seja inconsistente.
 
 # OpenMP
+
+2. Avalie o desempenho do programa em OpenMP, usando os mesmos dados/argumentos do programa com threads POSIX.
+
+- [Aprendendo a usar a estrutura OpenMP com GCC](https://www.ibm.com/developerworks/br/aix/library/au-aix-openmp-framework/index.html)
+- [Introdução ao OpenMPM](https://www.dcc.fc.up.pt/~fds/aulas/PPD/0708/intro_openmp-1x2.pdf)
