@@ -171,9 +171,24 @@ O programa não está correto, pois em casos raros é possível que as duas vari
 # OpenMP
 
 1. Implemente um programa equivalente a [pthreads_dotprod.c](pthreads_dotprod/pthreads_dotprod.c) usando OpenMP.
-   Implementação [aqui](openmp/openmp.c)
+   <br/>Implementação [aqui](openmp/openmp.c)
 
 2. Avalie o desempenho do programa em OpenMP, usando os mesmos dados/argumentos do programa com threads POSIX.
+
+|Pthreads|
+| Vetor | Repetições | 1 Thread | 2 Threads | 4 Threads |
+| -------- | ---------- | -------- | --------- | --------- |
+| 1000000 | 1000 | 3125604 | 1713023 | 1362928 |
+| 1000000 | 2000 | 6231789 | 3314419 | 2735857 |
+| 1000000 | 3000 | 9352403 | 4870448 | 4157044 |
+|OpenMP|
+| Vetor | Repetições | 1 Thread | 2 Threads | 4 Threads |
+| -------- | ---------- | -------- | --------- | --------- |
+| 1000000 | 1000 | 3497818 | 1630092 | 1328460 |
+| 1000000 | 2000 | 6296544 | 3506299 | 2866003 |
+| 1000000 | 3000 | 9764109 | 5652231 | 4378812 |
+
+### Referências
 
 - [Aprendendo a usar a estrutura OpenMP com GCC](https://www.ibm.com/developerworks/br/aix/library/au-aix-openmp-framework/index.html)
 - [Introdução ao OpenMPM](https://www.dcc.fc.up.pt/~fds/aulas/PPD/0708/intro_openmp-1x2.pdf)
