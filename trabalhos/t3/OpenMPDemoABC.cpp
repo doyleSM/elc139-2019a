@@ -184,4 +184,5 @@ int main(int argc, char **argv){
    m9.fillArrayStaticError();
    m9.printStats();
    cout << endl;
+   
 }
