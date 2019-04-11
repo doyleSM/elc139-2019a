@@ -52,58 +52,58 @@ class ArrayFiller{
       int i;
       #pragma omp parallel for shared(array) schedule(static, chunk)
       for (i = 0; i < size; i++)
-         addChar('A' + omp_get_thread_num(), array, true);
-      //array[i] = 'A'+ omp_get_thread_num();
+         //addChar('A' + omp_get_thread_num(), array, true);
+         array[i] = 'A'+ omp_get_thread_num();
    }
 
    void fillArrayStatic(){
       #pragma omp parallel for shared(array) schedule(static)
       for (int i = 0; i < size; i++)
-         addChar('A' + omp_get_thread_num(), array, true);
-      //array[i] = 'A'+ omp_get_thread_num();
+         //addChar('A' + omp_get_thread_num(), array, true);
+         array[i] = 'A'+ omp_get_thread_num();
    }
    void fillArrayDynamicChunk(){
       #pragma omp parallel for shared(array) schedule(dynamic, chunk)
       for (int i = 0; i < size; i++)
-         addChar('A' + omp_get_thread_num(), array, true);
-      //array[i] = 'A'+ omp_get_thread_num();
+         //addChar('A' + omp_get_thread_num(), array, true);
+         array[i] = 'A'+ omp_get_thread_num();
    }
    void fillArrayDynamic(){
       #pragma omp parallel for shared(array) schedule(dynamic)
       for (int i = 0; i < size; i++)
-         addChar('A' + omp_get_thread_num(), array, true);
-      //array[i] = 'A'+ omp_get_thread_num();
+         //addChar('A' + omp_get_thread_num(), array, true);
+         array[i] = 'A'+ omp_get_thread_num();
    }
    void fillArrayGuidedChunk(){
       #pragma omp parallel for shared(array) schedule(guided, chunk)
       for (int i = 0; i < size; i++)
-         addChar('A' + omp_get_thread_num(), array, true);
-      //array[i] = 'A'+ omp_get_thread_num();
+         //addChar('A' + omp_get_thread_num(), array, true);
+         array[i] = 'A'+ omp_get_thread_num();
    }
    void fillArrayGuided(){
       #pragma omp parallel for shared(array) schedule(guided)
       for (int i = 0; i < size; i++)
-         addChar('A' + omp_get_thread_num(), array, true);
-      //array[i] = 'A'+ omp_get_thread_num();
+         //addChar('A' + omp_get_thread_num(), array, true);
+         array[i] = 'A'+ omp_get_thread_num();
    }
    void fillArrayRunTime(){
       #pragma omp parallel for shared(array)
       for (int i = 0; i < size; i++)
-         addChar('A' + omp_get_thread_num(), array, true);
-      //array[i] = 'A'+ omp_get_thread_num();
+         //addChar('A' + omp_get_thread_num(), array, true);
+         array[i] = 'A'+ omp_get_thread_num();
    }
    void fillArrayAuto(){
       #pragma omp parallel for shared(array) schedule(auto)
       for (int i = 0; i < size; i++)
-         addChar('A' + omp_get_thread_num(), array, true);
-      //array[i] = 'A'+ omp_get_thread_num();
+         //addChar('A' + omp_get_thread_num(), array, true);
+         array[i] = 'A'+ omp_get_thread_num();
    }
 
    void fillArrayStaticError(){
       #pragma omp parallel for shared(array) schedule(static)
       for (int i = 0; i < size; i++)
-         addChar('A' + omp_get_thread_num(), array, false);
-      //array[i] = 'A'+ omp_get_thread_num();
+         //addChar('A' + omp_get_thread_num(), array, false);
+         array[i] = 'A'+ omp_get_thread_num();
    }
 
    void printStats(){
