@@ -63,19 +63,19 @@ int main(int argc, char *argv[])
     for (int row = 0; row < width; row++) {
       const double cy = yMin + row * dw;
         for (int col = 0; col < width; col++) {
-        const double cx = xMin + col * dw;
-        double x = cx;
-        double y = cy;
-        int depth = 256;
-        double x2, y2;
-        do {
-          x2 = x * x;
-          y2 = y * y;
-          y = 2 * x * y + cy;
-          x = x2 - y2 + cx;
-          depth--;
-        } while ((depth > 0) && ((x2 + y2) < 5.0));
-        pic[frame * width * width + row * width + col] = (unsigned char)depth;
+          const double cx = xMin + col * dw;
+          double x = cx;
+          double y = cy;
+          int depth = 256;
+          double x2, y2;
+          do {
+            x2 = x * x;
+            y2 = y * y;
+            y = 2 * x * y + cy;
+            x = x2 - y2 + cx;
+            depth--;
+          } while ((depth > 0) && ((x2 + y2) < 5.0));
+          pic[frame * width * width + row * width + col] = (unsigned char)depth;
       }
     }
     delta *= 0.98;
