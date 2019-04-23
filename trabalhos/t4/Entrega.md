@@ -25,3 +25,9 @@ Os resultados do speedup e da eficiência podem ser encontrados nas tabelas abai
 # Apresentação
 
 Os Slides/pdf podem ser acessados [aqui](https://docs.google.com/presentation/d/11OUxJtzzUI7YSJtVrhGs_9Ot5iEfHQdPpyTrnETUMJo/edit?usp=sharing) com email da inf
+
+# Gráficos
+
+É possível acessar o [gráfico](grafico.html) com todas as medições, podem escolher quais medições mostrar. (atenção ao scroll na direita)
+<br/>
+Gráfico gerado em python com a lib [plotly](https://plot.ly/python/)
