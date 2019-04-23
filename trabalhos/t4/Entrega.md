@@ -21,3 +21,7 @@ Os resultados do speedup e da eficiência podem ser encontrados nas tabelas abai
 # Sistema utilizado
 
 [especificações](specs.txt) do notebook usado para execuções
+
+# Apresentação
+
+Os Slides/pdf podem ser acessados [aqui](https://docs.google.com/presentation/d/11OUxJtzzUI7YSJtVrhGs_9Ot5iEfHQdPpyTrnETUMJo/edit?usp=sharing) com email da inf
