@@ -8,14 +8,14 @@ Nome: Gabriel Doyle Balk
 
 Foram desenvolvidas duas implementações do programa original
 
-[implementação 1](fractalpar1.cpp)
+[implementação 1](fractalpar1.cpp)<br/>
 [implementação 2](fractalpar2.cpp)
 
 # Resultados
 
 Os resultados do speedup e da eficiência podem ser encontrados nas tabelas abaixo:
 
-[tabela](TabelaPar1.md) de comparação fractalpar1.cpp
+[tabela](TabelaPar1.md) de comparação fractalpar1.cpp<br/>
 [tabela](TabelaPar2.md) de comparação fractalpar2.cpp
 
 # Sistema utilizado
