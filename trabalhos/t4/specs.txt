@@ -1,0 +1,18 @@
+dados do Processador
+
+Model name	: Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+Cpu cores	: 2
+Nº de threads: 4
+Frequencia :  ~ 2.40 GHz
+
+dados da Memoria
+
+MemTotal:        8 GB
+Total Width: 64 bits
+Data Width: 64 bits
+Type: LPDDR3
+Type Detail: Synchronous
+Speed: 1600 MHz
+
+Linux debian 4.9.0-8-amd64 #1 SMP Debian 4.9.144-3.1 (2019-02-19) x86_64 GNU/Linux
+
