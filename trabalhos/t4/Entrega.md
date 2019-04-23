@@ -4,7 +4,7 @@
 
 Nome: Gabriel Doyle Balk
 
-[implementação 1](/fractal/fractalpar1.cpp)
-[implementação 2](/fractal/fractalpar2.cpp)
+[implementação 1](fractalpar1.cpp)
+[implementação 2](fractalpar2.cpp)
 
 [tabela](TabelaPar1.md) de comparação fractalpar1.cpp
