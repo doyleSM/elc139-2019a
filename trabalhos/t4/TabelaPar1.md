@@ -1,3 +1,5 @@
+tabela referente ao programa [fractalpar1](fractalpar1.cpp)
+
 | Entrada | Schedule | Threads | Chunk | Tempo     | Speedup | Eficiência |
 | ------- | -------- | ------- | ----- | --------- | ------- | ---------- |
 | 512 32  |          |         |       |           |         |            |

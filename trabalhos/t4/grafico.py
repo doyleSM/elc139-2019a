@@ -323,7 +323,7 @@ data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7,
         trace8, trace9, trace10, trace11, trace12, trace13,
         trace14, trace15, trace16, trace17, trace18, trace19, trace20,
         trace21, trace22, trace23, trace24, trace25, trace26, trace27, trace28,
-        trace29, trace30, trace31, trace32, trace33, trace34, trace35]
+        trace29, trace30, trace31, trace32, trace33, trace34, trace35, trace36, trace37]
 layout = go.Layout(
     barmode='group'
 )

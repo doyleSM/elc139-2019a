@@ -1,424 +1,6 @@
-sequencial
-  ./fractal 512 32
-  compute time: 9.6992 s
 
-  ./fractal 512 64
-  compute time: 18.6922 s
-
-  ./fractal 1024 32
-  compute time: 38.8286 s
-
-  ./fractal 1024 64
-  compute time: 74.4327 s
-  
-  ./fractal 2048 128
-  compute time: 657.1410 s
-
-###########
-paralelo2
-schedule statico com chunk 1 e 2 threads
-
-./fractal 512 32 
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 5.0208 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 9.6113 s
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 20.0574 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 38.5618 s
-
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 353.0562 s
-
-
-################################
-paralelo2 com 2 threads e chunk 4
-
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 5.0455 s
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 9.6537 s
-
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 20.1025 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 38.6355 s
-
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 354.3215 s
-
-################################
-paralelo2
-schedule statico com chunk 1 e 4 threads
-
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.3938 s
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 6.5740 s
-
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 14.0115 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 27.3451 s
-
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 246.1432 s
-
-
-###########################
-paralelo2
-schedule statico com chunk 4 e 4 threads
-
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.7460 s
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 6.8094 s
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 14.5120 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 28.3196 s
-
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 252.7070 s
-
-
-###########################
-paralelo2
-schedule statico com chunk 1 e 8 threads
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 4.3397 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 8.3342 s
-
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 16.4181 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 32.0058 s
-
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 294.9896 s
-
-
-##########################
-paralelo2
-schedule statico com chunk 4 e 8 threads
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 4.3088 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 8.2871 s
-
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 16.4781 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 31.7219 s
-
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 299.5868 s
-
-
-##########################################
-paralelo2
-schedule dinamico com chunk 1 e 2 threads
-
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 5.2306 s
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 10.0374 s
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 20.8821 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 40.0541 s
-
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 361.4889 s
-
-
-######################################
-paralelo2
-schedule dinamico com chunk 4 e 2 threads
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 5.0941 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 9.7530 s
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 20.2794 s
-
- ./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 38.8343 s
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 353.7330 s
-
-
-#########################
-paralelo2
-schedule dinamico com chunk 1 e 4 threads
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.6172 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 6.2748 s
-
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 13.5719 s
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 26.8245
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 241.2624 s
-
-
-#############################
-paralelo2
-schedule dinamico com chunk 4 e 4 thread
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.1328 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 6.0163 s
-
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 13.7936 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 25.2812 s
-
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 235.8960 s
-
-
-#############################
-paralelo2
-schedule dinamico com chunk 1 e 8 thread
- ./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.7974 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 7.1651 s
-
-
- ./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 14.5595 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 28.4982 s
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 245.3883 s
-
-
-#############################
-paralelo2
-schedule dinamico com chunk 4 e 8 thread
-
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.3989 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 6.7769 s
-
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 14.0891 s
-
-
-./fractal 1024 64
-fractalpar2 
-computing 64 frames of 1024 by 1024 fractal
-compute time: 27.0655 s
-
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 236.2697 s
-
-
-#############################
 paralelo2
 schedule guided com chunk 1 e 2 thread
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 5.5302 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 11.2488 s
-
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 22.0801 s
 
 
 ./fractal 1024 64
@@ -427,30 +9,11 @@ computing 64 frames of 1024 by 1024 fractal
 compute time: 44.9454 s
 
 
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 391.7734 s
 
 ##########################################
 paralelo2
 schedule guided com chunk 4 e 2 thread
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 5.5411 s
 
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 11.2601 s
-
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 22.0944 s
 
 
 ./fractal 1024 64
@@ -458,29 +21,10 @@ fractalpar2
 computing 64 frames of 1024 by 1024 fractal
 compute time: 44.9461 s
 
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 392.2602 s
 
 ##########################################
 paralelo2
 schedule guided com chunk 1 e 4 thread
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.4302 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 6.6560 s
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 13.8331 s
 
 
 ./fractal 1024 64
@@ -490,31 +34,9 @@ compute time: 27.8531 s
 
 
 
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 252.2079 s
-
-
 ##########################################
 paralelo2
 schedule guided com chunk 4 e 4 thread
-
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.3344 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 6.8658 ss
-
- ./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 14.5059 s
 
 
 ./fractal 1024 64
@@ -523,32 +45,10 @@ computing 64 frames of 1024 by 1024 fractal
 compute time: 29.1013 s
 
 
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 265.5517 s
-
 ##########################################
 paralelo2
 schedule guided com chunk 1 e 8 thread
 
-./fractal 512 32
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.4013 s
-
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 6.7341 s
-
-
- ./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 14.0851 s
 
 
 ./fractal 1024 64
@@ -556,30 +56,9 @@ fractalpar2
 computing 64 frames of 1024 by 1024 fractal
 compute time: 27.0954 s
 
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 239.9386 s
-
-
 ##########################################
 paralelo2
 schedule guided com chunk 4 e 8 thread
-
-./fractal 512 32
-fractalpar2 
-computing 32 frames of 512 by 512 fractal
-compute time: 3.7544 s
-
-./fractal 512 64
-fractalpar2 
-computing 64 frames of 512 by 512 fractal
-compute time: 6.8058 s
-
-./fractal 1024 32
-fractalpar2 
-computing 32 frames of 1024 by 1024 fractal
-compute time: 13.9834 s
 
 
 ./fractal 1024 64
@@ -587,7 +66,3 @@ fractalpar2
 computing 64 frames of 1024 by 1024 fractal
  compute time: 26.5010 s
 
-./fractal 2048 128
-fractalpar2 
-computing 128 frames of 2048 by 2048 fractal
-compute time: 239.0509 s

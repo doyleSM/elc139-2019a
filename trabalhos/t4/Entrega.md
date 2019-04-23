@@ -1,4 +1,4 @@
-[Programação Paralela](https://github.com/AndreaInfUFSM/elc139-2019a) > T3
+[Programação Paralela](https://github.com/AndreaInfUFSM/elc139-2019a) > T4
 
 # Geração de Fractais de Mandelbrot em OpenMP
 
