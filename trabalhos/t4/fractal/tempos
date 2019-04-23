@@ -1,0 +1,279 @@
+sequencial
+
+  ./fractal 1024 64
+  compute time: 74.4327 s
+  
+  ./fractal 2048 128
+  compute time: 657.1410 s
+
+###########
+paralelo1
+schedule statico com chunk 1 e 2 threads
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 39.0689 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 359.1162 s
+
+################################
+paralelo1 com 2 threads e chunk 4
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 39.3625 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 360.2734 s
+################################
+paralelo1
+schedule statico com chunk 1 e 4 threads
+
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 27.6467 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 245.3173 s
+
+###########################
+paralelo1
+schedule statico com chunk 4 e 4 threads
+
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 27.7393 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 244.9794 s
+
+###########################
+paralelo1
+schedule statico com chunk 1 e 8 threads
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 27.6223 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 245.3705 s
+
+##########################
+paralelo1
+schedule statico com chunk 4 e 8 threads
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 27.9940 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 245.6037 
+##########################################
+paralelo1
+schedule dinamico com chunk 1 e 2 threads
+
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 39.5586 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 359.1979 s
+
+######################################
+paralelo1
+schedule dinamico com chunk 4 e 2 threads
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 39.1135 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 362.0912 s
+
+#########################
+paralelo1
+schedule dinamico com chunk 1 e 4 threads
+
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 25.6992 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 231.5340 s
+
+#############################
+paralelo1
+schedule dinamico com chunk 4 e 4 thread
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 25.7511 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 229.9759 s
+
+#############################
+paralelo1
+schedule dinamico com chunk 1 e 8 thread
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 25.7353 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 232.5440 s
+
+#############################
+paralelo1
+schedule dinamico com chunk 4 e 8 thread
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 25.4934 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 233.5268 s
+
+#############################
+paralelo1
+schedule guided com chunk 1 e 2 thread
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 39.1522 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 375.2937 s
+
+##########################################
+paralelo1
+schedule guided com chunk 4 e 2 thread
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 39.1500 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 376.1020 s
+
+##########################################
+paralelo1
+schedule guided com chunk 1 e 4 thread
+
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 25.2587 s
+
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 238.8925 s
+
+##########################################
+paralelo1
+schedule guided com chunk 4 e 4 thread
+
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 26.3392 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 232.5136 s
+
+##########################################
+paralelo1
+schedule guided com chunk 1 e 8 thread
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 26.2121 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 235.8252 s
+
+##########################################
+paralelo1
+schedule guided com chunk 4 e 8 thread
+
+
+./fractal 1024 64
+fractalpar1 
+computing 64 frames of 1024 by 1024 fractal
+compute time: 26.0182 s
+
+./fractal 2048 128
+fractalpar1 
+computing 128 frames of 2048 by 2048 fractal
+compute time: 232.9926 s
