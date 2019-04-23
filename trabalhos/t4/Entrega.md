@@ -28,6 +28,7 @@ Os Slides/pdf podem ser acessados [aqui](https://docs.google.com/presentation/d/
 
 # Gráficos
 
-É possível acessar o [gráfico](grafico.html) com todas as medições, podem escolher quais medições mostrar. (atenção ao scroll na direita)
+É possível acessar o [gráfico](grafico.html) com todas as medições, podem escolher quais medições mostrar. (atenção ao scroll na direita).
+**Obs**: é preciso acessar e baixar como html
 <br/>
 Gráfico gerado em python com a lib [plotly](https://plot.ly/python/)
