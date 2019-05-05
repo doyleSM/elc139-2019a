@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
       tag = rank;
       rc = MPI_Send(&outmsg, 1, MPI_INT, dest, tag, MPI_COMM_WORLD);
       printf("Enviei mensagem para processo %d...\n", dest);
-      rc = MPI_Recv(&inmsg, 1, MPI_INT, source, tag, MPI_COMM_WORLD, &stat);
+      rc = MPI_Recv(&inmsg, 1, MPI_INT, source, dest, MPI_COMM_WORLD, &stat);
       printf("Recebi mensagem do processo %d...\n", source);
    }
    else if (rank == 1)
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
       dest = 0;
       source = dest;
       tag = rank;
-      rc = MPI_Recv(&inmsg, 1, MPI_INT, source, tag, MPI_COMM_WORLD, &stat);
+      rc = MPI_Recv(&inmsg, 1, MPI_INT, source, dest, MPI_COMM_WORLD, &stat);
       printf("Recebi mensagem do processo %d...\n", source);
       rc = MPI_Send(&outmsg, 1, MPI_INT, dest, tag, MPI_COMM_WORLD);
       printf("Enviei mensagem para processo %d...\n", dest);
