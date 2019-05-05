@@ -24,17 +24,10 @@ Com base na tabela abaixo, vemos que houve um ganho bastante alto com 2 processo
 
 # Parte 2
 
+[Implementação](pipeline.c) de um programa MPI que transporte uma mensagem em um pipeline formado por processos de 0 a NP-1
+
 # Parte 3
 
 Correções dos programas:<br/>
 [Correção 1](mpi_corrigido1.c)<br/>
 [Correção 2](mpi_corrigido2.c)
-
-<!--
-# Resultados
-
-Os resultados do speedup e da eficiência podem ser encontrados nas tabelas abaixo:
-
-[tabela](TabelaPar1.md) de comparação fractalpar1.cpp<br/>
-[tabela](TabelaPar2.md) de comparação fractalpar2.cpp
--->
