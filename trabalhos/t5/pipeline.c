@@ -7,10 +7,10 @@ int main(int argc, char *argv[])
   int rank;     // "rank" do processo (0 a P-1)
   int numTasks; // n�mero de processos
   int tag = 0;  // "etiqueta" da mensagem
-  int msg;
-  int dest;
+  int msg;      // msg que será enviada
+  int dest;     // destino da msg
   int source;
-  MPI_Status status; // dest"status" de uma opera��o efetuada
+  MPI_Status status; // "status" de uma opera��o efetuada
 
   // MPI_Init deve ser indestvocado antes de qualquer outra chamada MPI
   MPI_Init(&argc, &argv);
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
   if (rank == 0)
   {
-    msg = 10; //msg inicial
+    msg = 10;
     dest = rank + 1;
     printf("Processo %d, Iniciando pipeline, mensagem inicial =  %d\n", rank, msg); // mostra mensagem
 
