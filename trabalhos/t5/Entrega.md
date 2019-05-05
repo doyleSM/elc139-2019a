@@ -14,7 +14,8 @@ Nome: Gabriel Doyle Balk
 | mpirun -np (1,2,4) openmpi 3000000 1000  | 3000000  | 1000       | 9672545 usec  | 5364396 usec  | 4297139     |
 | mpirun -np (1,2,4) openmpi 10000000 1000 | 10000000 | 1000       | 31243911 usec | 18207751 usec | 14653807    |
 
-Com base na tabela abaixo, vemos que houve um ganho bastante alto com 2 processos em relação ao sequencial, e um ganho melhor ainda com a passagem para 4 processos, também é possível notar, que o speedUp diminui pouco, mas diminui, com o aumento do tamanho do vetor
+Com base na tabela abaixo, vemos que houve um ganho bastante alto com 2 processos em relação ao sequencial. Com 4 processos há um ganho, mas longe do ideal, eu esperava um speedup maior.
+É possível notar também, que o speedUp diminui pouco, mas diminui, com o aumento do tamanho do vetor
 
 | Entrada                                  | Vetor    | Repetições | 2 Processos(Speedup) / eficiência | 4 Processos(Speedup) / eficiência |
 | ---------------------------------------- | -------- | ---------- | --------------------------------- | --------------------------------- |
