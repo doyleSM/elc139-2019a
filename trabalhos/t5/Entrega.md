@@ -8,6 +8,8 @@ Nome: Gabriel Doyle Balk
 
 [Implementação em OpenMPI](openmpi.c) do programa que calcula repetidas vezes o produto escalar entre 2 vetores em openMP [versão OpenMP](https://github.com/doyleSM/elc139-2019a/blob/master/trabalhos/t2/openmp/openmp.c).
 
+Disponível em também em [csv](results.csv)
+
 | Entrada                                  | Vetor    | Repetições | 1 Processo    | 2 Processos   | 4 Processos |
 | ---------------------------------------- | -------- | ---------- | ------------- | ------------- | ----------- |
 | mpirun -np (1,2,4) openmpi 1000000 1000  | 1000000  | 1000       | 3125991 usec  | 1660884 usec  | 1338731     |
@@ -30,5 +32,5 @@ Com base na tabela abaixo, vemos que houve um ganho bastante alto com 2 processo
 # Parte 3
 
 Correções dos programas:<br/>
-[Correção 1](mpi_corrigido1.c)<br/>
-[Correção 2](mpi_corrigido2.c)
+[Correção 1](mpi_corrigido1.c) Programa estava com tags diferentes<br/>
+[Correção 2](mpi_corrigido2.c) Programa não tinha o MPI_Finalize().
