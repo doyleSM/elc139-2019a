@@ -11,9 +11,9 @@ Nome: Gabriel Doyle Balk
 
 O trecho abaixo que possui um if else para descobrir quando processo numero zero está executando e também calculando o tamanho que cada processo deve calcular foi removido.
 
-no if, o programa executa um laço, envia faz um SEND a matriz B e envia sucessivamente para cada processo e faz o mesmo com o tamanho do que cada processo vai calcular, também passando o ponto de inicio e final de cálculo.
+No if, o programa executa um laço, envia faz um SEND a matriz B e envia sucessivamente para cada processo e faz o mesmo com o tamanho do que cada processo vai calcular, também passando o ponto de inicio e final de cálculo.
 
-no else os processos esperam as mensagens com tanto com a matriz B quanto com a matriz A e as posições para calculo.
+No else os processos esperam as mensagens com tanto com a matriz B quanto com a matriz A e as posições para calculo.
 
 ```
 if (myrank == 0)
@@ -40,7 +40,7 @@ if (myrank == 0)
 Todo o código acima foi trocado pelo código abaixo, onde o MPI_Bcast, é responsavel pelo envio e recebimento da matriz B a todos os processos, e o ele é 'disparado' pelo processo root(processo 0).
 Não é mais preciso executar o MPI_Send i vezes, a diretiva MPI_Bcast identifica quantos e quais processos o programa possui e faz o envio e recebimento automaticamente.
 
-já o Scatter é responsável pelo envio e recebimento da matriz A para todos os processos e ele é 'disparado' pelo processo root(processo 0) também.
+Já o Scatter é responsável pelo envio e recebimento da matriz A para todos os processos e ele é 'disparado' pelo processo root(processo 0) também.
 Onde fazia-se MPI_Send i vezes, agora só é preciso o MPI_Scatter e enviar como parâmetros a Matriz A, qual o tamanho será enviado e também a partir de que posição o processo vai receber e também quantos elementos.
 
 ```
