@@ -6,7 +6,9 @@ Nome: Gabriel Doyle Balk
 
 # Parte 1
 
-[Implementação do programa](matrix_mpi_collective.c)
+[Minha implementação do programa](matrix_mpi_collective.c)
+<br/>
+[Implementação original do programa](matrix_mult_sr.c)
 <br/>
 
 O trecho abaixo que possui um if else para descobrir quando processo numero zero está executando e também calculando o tamanho que cada processo deve calcular foi removido.
