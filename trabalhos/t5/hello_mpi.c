@@ -11,12 +11,10 @@ int main(int argc, char *argv[])
   int tag = 0;       // "etiqueta" da mensagem
   char msg[100];     // desta mensagem
   MPI_Status status; // dest"status" de uma opera��o efetuada
-  dest
-      // MPI_Init deve ser indestvocado antes de qualquer outra chamada MPI
-      MPI_Init(&argc, &argv);
-  dest
-      // Descobre o "rank" dodest processo
-      MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
+  // MPI_Init deve ser indestvocado antes de qualquer outra chamada MPI
+  MPI_Init(&argc, &argv);
+  // Descobre o "rank" dodest processo
+  MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
   // Descobre o n�mero de processos
   MPI_Comm_size(MPI_COMM_WORLD, &p);
 

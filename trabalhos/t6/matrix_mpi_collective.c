@@ -1,7 +1,8 @@
 #include <mpi.h>
 #include <stdio.h>
 
-#define SIZE 8 /* Size of matrices */
+#define root 0
+#define SIZE 8
 
 int A[SIZE][SIZE], B[SIZE][SIZE], C[SIZE][SIZE];
 
@@ -29,8 +30,7 @@ void print_matrix(int m[SIZE][SIZE])
 int main(int argc, char *argv[])
 {
   int myrank, nproc, from, to, i, j, k;
-  int tag_A = 0;
-  int tag_B = 1;
+  int TAM;
   MPI_Status status;
 
   MPI_Init(&argc, &argv);
@@ -47,6 +47,7 @@ int main(int argc, char *argv[])
 
   from = myrank * SIZE / nproc;
   to = (myrank + 1) * SIZE / nproc;
+  TAM = SIZE * SIZE;
 
   /* Process 0 fills the input matrices and broadcasts them to the rest */
   /* (actually, only the relevant stripe of A is sent to each process) */
@@ -57,24 +58,9 @@ int main(int argc, char *argv[])
     fill_matrix(B);
   }
 
-  if (myrank == 0)
-  {
-    for (int i = 1; i < nproc; ++i)
-    {
-      int lFrom = i * SIZE / nproc;
-      int lTo = (i + 1) * SIZE / nproc;
-      //printf("slice log: %d, %d\n", lFrom, lTo);
-      // Broadcast B to other process
-      MPI_Send(B, SIZE * SIZE, MPI_INT, i, tag_A, MPI_COMM_WORLD);
-      // Send "Total of lines" / "Number of process" lines to other process
-      MPI_Send(A[lFrom], (lTo - lFrom) * SIZE, MPI_INT, i, tag_B, MPI_COMM_WORLD);
-    }
-  }
-  else
-  {
-    MPI_Recv(B, SIZE * SIZE, MPI_INT, MPI_ANY_SOURCE, tag_A, MPI_COMM_WORLD, &status);
-    MPI_Recv(A[from], (to - from) * SIZE, MPI_INT, MPI_ANY_SOURCE, tag_B, MPI_COMM_WORLD, &status);
-  }
+  //buff, tipo, tag, comm
+  MPI_Bcast(B, TAM, MPI_INT, root, MPI_COMM_WORLD);
+  MPI_Scatter(A[from], TAM / nproc, MPI_INT, A[from], TAM / nproc, MPI_INT, root, MPI_COMM_WORLD);
 
   printf("computing slice %d (from row %d to %d)\n", myrank, from, to - 1);
   for (i = from; i < to; i++)
@@ -89,7 +75,7 @@ int main(int argc, char *argv[])
     }
   }
 
-  MPI_Gather(C[from], SIZE * SIZE / nproc, MPI_INT, C, SIZE * SIZE / nproc, MPI_INT, 0, MPI_COMM_WORLD);
+  MPI_Gather(C[from], TAM / nproc, MPI_INT, C, TAM / nproc, MPI_INT, root, MPI_COMM_WORLD);
 
   if (myrank == 0)
   {
