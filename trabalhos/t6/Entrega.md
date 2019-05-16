@@ -50,6 +50,10 @@ Onde fazia-se MPI_Send i vezes, agora só é preciso o MPI_Scatter e enviar como
   MPI_Scatter(A, TAM / nproc, MPI_INT, A[from], TAM / nproc, MPI_INT, root, MPI_COMM_WORLD);
 ```
 
+# Parte 2
+
+[resumo](resumo.md)
+
 # Referências
 
 - [MPI: A Message-Passing Interface Standard](https://www.mpi-forum.org/docs/mpi-3.1/mpi31-report.pdf)

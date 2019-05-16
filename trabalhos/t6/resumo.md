@@ -1,0 +1,9 @@
+O autor diz que uma das razões da dificuldade de desenvolver programas paralelos deve-se ao fato de que os programadores da atualidade dependem de estruturas da década de 80. Também cita que a vantagem do MPI é que ele padronizou e integrou bibliotecas paralelas que foram testadas na prática. MPI foi projetado para permitir um alto desempenho e usa primitivas para enviar e receber resultados em um fluxo complexo.
+Foram feitas outras tentativas para superar isso, como o OpenMP, mas não houve sucesso por serem menos compreensiveis e previsíveis.
+O autor faz uma comparação com a década de 60 com a tese de dijkstra onde diz que goto é considerado prejudicial e diz em outras palavras que as diretivas Send/Receive estão para programação paralela assim como goto está para programas sequencias e que devem ser evitadas sempre que possível.
+Também cita que como substituto de send/receive não é preciso inventar algo novo, basta fazer o uso das operações coletivas que já existem no MPI (Bcast, Scatter, Gather, Allgather, All-to-All, Scan, Reduce).
+
+Para defender seu ponto de vista o autor rebate vários mitos acerca de send/receive vs operações coletivas.
+Demonstrou vantagens das operações coletivas em relação ao send/receive em cinco áreas as quais chamou de simplicidade, expressivide, programabilidade, desempenho e previsibilidade.
+
+Opinião: Fica bem dificil de refutar depois de todas essas informações e com pouca experiência(nenhuma eu diria). Eu concordo principalmente com a simplicidade, fica muito mais fácil de ler e compreender o código com operações coletivas. Porém discordo que devemos aprender elas diretamente e nem saber que send/receive existem como fazemos com o goto por exemplo(eu mesmo nunca usei e não senti falta e momento algum), acho que deve ser ensinado para sabermos como as coisas funcionam realmente e deve-se explicar assim como no artigo quais as suas vantagens e porque devemos usar.
