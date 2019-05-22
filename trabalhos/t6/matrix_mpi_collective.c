@@ -1,10 +1,17 @@
 #include <mpi.h>
 #include <stdio.h>
-
+#include <sys/time.h>
 #define root 0
 #define SIZE 8
 
 int A[SIZE][SIZE], B[SIZE][SIZE], C[SIZE][SIZE];
+
+long wtime()
+{
+  struct timeval t;
+  gettimeofday(&t, NULL);
+  return t.tv_sec * 1000000 + t.tv_usec;
+}
 
 void fill_matrix(int m[SIZE][SIZE])
 {
@@ -31,6 +38,7 @@ int main(int argc, char *argv[])
 {
   int myrank, nproc, from, to, i, j, k;
   int TAM;
+  long start_time, end_time;
   MPI_Status status;
 
   MPI_Init(&argc, &argv);
@@ -57,7 +65,7 @@ int main(int argc, char *argv[])
     fill_matrix(A);
     fill_matrix(B);
   }
-
+  start_time = wtime();
   //buff, tipo, tag, comm
   MPI_Bcast(B, TAM, MPI_INT, root, MPI_COMM_WORLD);
   MPI_Scatter(A[from], TAM / nproc, MPI_INT, A[from], TAM / nproc, MPI_INT, root, MPI_COMM_WORLD);
@@ -76,9 +84,11 @@ int main(int argc, char *argv[])
   }
 
   MPI_Gather(C[from], TAM / nproc, MPI_INT, C, TAM / nproc, MPI_INT, root, MPI_COMM_WORLD);
-
+  end_time = wtime();
   if (myrank == 0)
   {
+    printf("tempo de execução: %ld\n\n", (long)(end_time - start_time));
+
     printf("\n\n");
     print_matrix(A);
     printf("\n\n\t       * \n");
