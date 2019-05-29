@@ -4,20 +4,18 @@
 
 Nome: Gabriel Doyle Balk
 <br/>
-[Configuração](https://github.com/doyleSM/elc139-2019a/blob/master/trabalhos/t2/specs.txt) da maquina utilizada <br/>
-<br/>
+[Configuração](https://github.com/doyleSM/elc139-2019a/blob/master/trabalhos/t2/specs.txt) da maquina utilizada </br>
+</br>
 
 # Parte 1
 
 [Minha implementação](sr_meu_bcast.c) com MPI_Bcast
 <br/>
 [Implementação original](sr_bcast.c) do programa
-<br/>
-<br/>
-<br/>
-
+</br>
+</br>
 <img src="./graficos/1.png" width="500">
-<br/>
+</br>
 Os parâmetros do xml originais não foram alterados,largura de banda de 125Mbps, e latência de 5us, e speed host de 14GFlops conforme a [lista](https://setiathome.berkeley.edu/cpu_list.php) de performance fornecida.
 
 Abaixo a tabela com os resultados obtidos:
