@@ -3,14 +3,15 @@
 # Avaliação de desempenho de programas MPI
 
 Nome: Gabriel Doyle Balk
+<br/>
 [Configuração](https://github.com/doyleSM/elc139-2019a/blob/master/trabalhos/t2/specs.txt) da maquina utilizada <br/>
 <br/>
 
 # Parte 1
 
-[Minha implementação com MPI_Bcast](sr_meu_bcast.c)
+[Minha implementação](sr_meu_bcast.c) com MPI_Bcast
 <br/>
-[Implementação original do programa](sr_bcast.c)
+[Implementação original](sr_bcast.c) do programa
 <br/>
 <img src="./graficos/1.png" width="500">
 Os parâmetros do xml originais não foram alterados,largura de banda de 125Mbps, e latência de 5us, e speed host de 14GFlops conforme a [lista](https://setiathome.berkeley.edu/cpu_list.php) de performance fornecida.
@@ -33,16 +34,24 @@ Abaixo a tabela com os resultados obtidos:
 | Bcast        | 32     | 14GFlops   | 286.7 |
 
 <br/>
+
 # Parte 2
 
 **Desempenho do [programa](avg.c) fornecido**
+
 <br/>
-#Gráficos:
+
+# Gráficos:
+
 <br/>
 <br/>
 
 <img src="./graficos/2.png" width="500">
+<br/>
+
 Speed host de 14GFlops conforme a [lista](https://setiathome.berkeley.edu/cpu_list.php) de performance fornecida.
+
+Abaixo a tabela com os resultados obtidos:
 
 | ntasks | host-speed | largura banda | latência | usec       | vetor |
 | ------ | ---------- | ------------- | -------- | ---------- | ----- |
@@ -56,8 +65,13 @@ Speed host de 14GFlops conforme a [lista](https://setiathome.berkeley.edu/cpu_li
 <br/>
 <br/>
 <img src="./graficos/3.png" width="500">
-Speed host de 14GFlops conforme a [lista](https://setiathome.berkeley.edu/cpu_list.php) de performance fornecida.
 <br/>
+
+Speed host de 14GFlops conforme a [lista](https://setiathome.berkeley.edu/cpu_list.php) de performance fornecida.
+
+<br/>
+Abaixo a tabela com os resultados obtidos:
+
 | ntasks | host-speed | largura banda | latência | usec      | vetor |
 | ------ | ---------- | ------------- | -------- | --------- | ----- |
 | 16     | 14GFlops   | 500mbs        | 20us     | 1.3045098 | 1000  |
