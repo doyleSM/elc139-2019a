@@ -3,7 +3,7 @@
 # Avaliação de desempenho de programas MPI
 
 Nome: Gabriel Doyle Balk
-<br/>
+</br>
 [Configuração](https://github.com/doyleSM/elc139-2019a/blob/master/trabalhos/t2/specs.txt) da maquina utilizada </br>
 </br>
 
@@ -35,21 +35,20 @@ Abaixo a tabela com os resultados obtidos:
 | Bcast        | 16     | 14GFlops   | 282.6 |
 | Bcast        | 32     | 14GFlops   | 286.7 |
 
-<br/>
+</br>
 
 # Parte 2
 
 **Desempenho do [programa](avg.c) fornecido**
 
-<br/>
+</br>
 
 # Gráficos:
 
-<br/>
-<br/>
+</br>
 
 <img src="./graficos/2.png" width="500">
-<br/>
+</br>
 
 Speed host de 14GFlops conforme a [lista](https://setiathome.berkeley.edu/cpu_list.php) de performance fornecida.
 
@@ -64,14 +63,15 @@ Abaixo a tabela com os resultados obtidos:
 | 16     | 14GFlops   | 125mbs        | 10us     | 8.2300677  | 2000  |
 | 16     | 14GFlops   | 125mbs        | 10us     | 12.2018185 | 3000  |
 
-<br/>
-<br/>
+</br>
+
 <img src="./graficos/3.png" width="500">
-<br/>
+</br>
 
 Speed host de 14GFlops conforme a [lista](https://setiathome.berkeley.edu/cpu_list.php) de performance fornecida.
 
-<br/>
+</br>
+
 Abaixo a tabela com os resultados obtidos:
 
 | ntasks | host-speed | largura banda | latência | usec      | vetor |
