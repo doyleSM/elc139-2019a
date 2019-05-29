@@ -13,34 +13,6 @@ long wtime()
   return t.tv_sec * 1000000 + t.tv_usec;
 }
 
-void sr_bcast(void *data, int count, MPI_Datatype datatype, int root, MPI_Comm communicator)
-{
-
-  int myrank; // "rank" do processo
-  int p;      // numero de processos
-
-  MPI_Comm_rank(communicator, &myrank);
-  MPI_Comm_size(communicator, &p);
-
-  if (myrank == root)
-  {
-    // Se for o rank root, enviar o dado para cada um dos demais
-    int i;
-    for (i = 0; i < p; i++)
-    {
-      if (i != myrank)
-      {
-        MPI_Send(data, count, datatype, i, 0, communicator);
-      }
-    }
-  }
-  else
-  {
-    // Se não for o rank root, recebe o dade envidado pelo rank root
-    MPI_Recv(data, count, datatype, root, 0, communicator, MPI_STATUS_IGNORE);
-  }
-}
-
 int main(int argc, char **argv)
 {
 
@@ -60,16 +32,12 @@ int main(int argc, char **argv)
 
   if (myrank == root)
   {
+    data = 100;
     start_time = wtime();
-    data = 100; // atribui um valor para ser enviado
-    printf("Processo %d (root) realizando broadcast do dado %d\n", root, data);
-    sr_bcast(&data, 1, MPI_INT, root, MPI_COMM_WORLD);
   }
-  else
-  {
-    sr_bcast(&data, 1, MPI_INT, root, MPI_COMM_WORLD);
-    printf("Processo %d recebendo dado %d do processo root\n", myrank, data);
-  }
+  MPI_Bcast(&data, 1, MPI_INT, root, MPI_COMM_WORLD);
+
+  printf("Processo %d recebendo dado %d do processo root\n", myrank, data);
 
   MPI_Barrier(MPI_COMM_WORLD);
   if (myrank == root)

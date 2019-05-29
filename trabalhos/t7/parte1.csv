@@ -1,0 +1,13 @@
+tool,ntasks,host-speed,usec
+send/receive,2,14GFlops,372.8
+send/receive,4,14GFlops,389
+send/receive,8,14GFlops,376
+send/receive,12,14GFlops,437.4
+send/receive,16,14GFlops,412.9
+send/receive,32,14GFlops,499.7
+Bcast,2,14GFlops,262.3
+Bcast,4,14GFlops,263.1
+Bcast,8,14GFlops,265.9
+Bcast,12,14GFlops,281
+Bcast,16,14GFlops,282.6
+Bcast,32,14GFlops,286.7
