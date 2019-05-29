@@ -13,7 +13,11 @@ Nome: Gabriel Doyle Balk
 <br/>
 [Implementação original](sr_bcast.c) do programa
 <br/>
+<br/>
+<br/>
+
 <img src="./graficos/1.png" width="500">
+<br/>
 Os parâmetros do xml originais não foram alterados,largura de banda de 125Mbps, e latência de 5us, e speed host de 14GFlops conforme a [lista](https://setiathome.berkeley.edu/cpu_list.php) de performance fornecida.
 
 Abaixo a tabela com os resultados obtidos:
