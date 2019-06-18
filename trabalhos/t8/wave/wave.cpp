@@ -59,7 +59,6 @@ int main(int argc, char *argv[])
         pic[frame * width * width + row * width + col] = (unsigned char) color;
       }
     }
-
   }
 
   // end time

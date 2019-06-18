@@ -1,0 +1,50 @@
+Deixei apenas os tempos mais significativos, como podemos ver nos profilers a maior parte do tempo 
+é gasta com a sincronização (que pelo que entendi, conta bastante com o tempo que demora a função que usa a GPU)
+e também com o malloc dos dados. Acredito que esses valores podem ser diminuídos com uma melhor paralização da função gerarFrames.
+Com relação ao .cpp nem tem muito o que falar, o ganho de performance é bastante alto devido a paralelização.
+
+
+
+Computando 100 frames de dimensão 1024 por 1024
+==1761== NVPROF is profiling process 1761, command: ./testdims 1024 100
+compute time: 0.6173 s
+==1761== Profiling application: ./testdims 1024 100
+==1761== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  617.22ms         1  617.22ms  617.22ms  617.22ms  gerarFrames(int, unsigned char*)
+      API calls:   68.33%  617.24ms         1  617.24ms  617.24ms  617.24ms  cudaDeviceSynchronize
+                   31.29%  282.63ms         1  282.63ms  282.63ms  282.63ms  cudaMallocManaged
+
+
+Computando 200 frames de dimensão 1024 por 1024
+==1778== NVPROF is profiling process 1778, command: ./testdims 1024 200
+compute time: 0.6604 s
+==1778== Profiling application: ./testdims 1024 200
+==1778== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  660.32ms         1  660.32ms  660.32ms  660.32ms  gerarFrames(int, unsigned char*)
+      API calls:   72.52%  660.36ms         1  660.36ms  660.36ms  660.36ms  cudaDeviceSynchronize
+                   26.78%  243.80ms         1  243.80ms  243.80ms  243.80ms  cudaMallocManaged
+
+
+Computando 100 frames de dimensão 2048 por 2048
+==1795== NVPROF is profiling process 1795, command: ./testdims 2048 100
+compute time: 2.0035 s
+==1795== Profiling application: ./testdims 2048 100
+==1795== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  2.00338s         1  2.00338s  2.00338s  2.00338s  gerarFrames(int, unsigned char*)
+      API calls:   88.18%  2.00340s         1  2.00340s  2.00340s  2.00340s  cudaDeviceSynchronize
+                   11.29%  256.47ms         1  256.47ms  256.47ms  256.47ms  cudaMallocManaged
+
+
+
+Computando 200 frames de dimensão 2048 por 2048
+==1812== NVPROF is profiling process 1812, command: ./testdims 2048 200
+compute time: 2.1372 s
+==1812== Profiling application: ./testdims 2048 200
+==1812== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  2.13707s         1  2.13707s  2.13707s  2.13707s  gerarFrames(int, unsigned char*)
+      API calls:   88.68%  2.13709s         1  2.13709s  2.13709s  2.13709s  cudaDeviceSynchronize
+                   10.33%  248.91ms         1  248.91ms  248.91ms  248.91ms  cudaMallocManaged
