@@ -23,6 +23,9 @@ Abaixo a tabela com os resultados obtidos:
 | ./wave 2048 100 | 21.4478 s  | 2.0035 s  | 10.70   |
 | ./wave 2048 200 | 42.7675 s  | 2.1372 s  | 20.01   |
 
+Análise dos resultados pode ser encontrada [aqui](tempo1.txt)
+</br>
+
 # Parte 2
 
 [Implementação original](wave.cpp) do programa em c++
@@ -37,6 +40,9 @@ Abaixo a tabela com os resultados obtidos:
 | ./wave 1024 200 | 10.8669 s  | 0.3788 s  | 29.59   |
 | ./wave 2048 100 | 21.4478 s  | 0.3543 s  | 58.37   |
 | ./wave 2048 200 | 42.7675 s  | 0.5916 s  | 68.15   |
+
+Análise dos resultados pode ser encontrada [aqui](tempo2.txt)
+</br>
 
 ## Referências
 
